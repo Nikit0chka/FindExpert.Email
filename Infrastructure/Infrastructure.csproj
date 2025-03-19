@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Confluent.Kafka" />
+      <PackageReference Include="MailKit" />
+      <PackageReference Include="MediatR" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
+      <PackageReference Include="Microsoft.AspNetCore.Razor" />
+      <PackageReference Include="RazorLight" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="EmailTemplates\AuthorizationCode\AuthorizationCodeTemplate.cshtml" />
+      <Content Include="EmailTemplates\AuthorizationCode\AuthorizationCodeTemplate.cshtml" />
+    </ItemGroup>
+
+</Project>
