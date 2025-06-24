@@ -15,7 +15,7 @@ builder.Host.UseSerilog();
 
 var loggerFactory = LoggerFactory.Create(static loggingBuilder =>
 {
-    loggingBuilder.AddSerilog(); // Интеграция Serilog
+    loggingBuilder.AddSerilog();
 });
 
 var logger = loggerFactory.CreateLogger("Program");

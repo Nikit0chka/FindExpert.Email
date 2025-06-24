@@ -40,3 +40,4 @@ internal class SendAuthorizationCodeCommandHandler(ILogger<SendAuthorizationCode
         }
     }
 }
+
